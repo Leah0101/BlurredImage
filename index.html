@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Blurred Image</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Jason Mayes">
+
+  <!-- Import the webpage's stylesheet -->
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <h1>Blurred Image</h1>
+
+  <section id="demos" class="invisible">
+    <div id="liveView" class="videoView">
+      <button id="webcamButton">Enable Webcam</button>
+      <h2 id="humanCountText">There are 0 possible humans in this cam</h2>
+      <video id="webcam" autoplay></video>
+    </div>
+
+    <img id="img" class='glitch'></img>
+  </section>
+
+  <style src="./style.css"></style>
+
+  <script src="scripts/powerglitch.min.js" type="text/javascript"></script>
+  <script src="scripts/glitch.canvas.min.js" type="text/javascript"></script>
+
+  <!-- Import TensorFlow.js library -->
+  <script src="scripts/tf.min.js" type="text/javascript"></script>
+
+  <!-- Load the coco-ssd model to use to recognize things in images -->
+  <script src="scripts/coco-ssd.js"></script>
+
+  <!-- Import the page's JavaScript to do some stuff -->
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
