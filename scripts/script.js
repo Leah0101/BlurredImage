@@ -38,7 +38,6 @@ cocoSsd.load().then(function (loadedModel) {
   image.src = './img.jpg'
   // Show demo section now model is ready to use.
   demosSection.classList.remove('invisible');
-  PowerGlitch.glitch('div.glitch', glitchArray[0])
 });
 
 const video = document.getElementById('webcam');
